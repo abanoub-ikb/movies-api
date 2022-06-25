@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieBest</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <!-- nav bar start -->
+        <nav id="navBar">
+            <!-- nav links start -->
+            <div class="nav-links ">
+                <ul>
+                    <li><a id="nowPlaying" >Now Playing</a></li>
+                    <li><a id="popular" >Popular</a></li>
+                    <li><a id="topRated" >Top Rated</a></li>
+                    <li><a id="trending" >Trending</a></li>
+                    <li><a id="upcoming" >Upcoming</a></li>
+                    <li><a id="contact" href="#contactUs">Contact Us</a></li>
+                </ul>
+                <div class="nav-footer">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter mx-3"></i>
+                    <i class="fa-solid fa-basketball"></i>
+                </div>
+            </div>
+            <!-- nav links end -->
+
+            <!-- nav logo start -->
+            <div class="logo">
+                <div class="img">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="menu-icon">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </div>
+                <div class="logo-menu-links">
+                    <i class="fa-solid fa-share-nodes fa-lg"></i>
+                </div>
+            </div>
+            <!-- nav logo start -->
+        </nav>
+        <!-- nav bar end -->
+        <div class="search-bar">
+            <input id="searchInput" type="text" placeholder="search">
+        </div>
+        <div class="container  py-5 text-center">
+            <div id="htmlDataContainer"  class="row justify-content-center g-3">
+            </div>
+        </div>
+    </section>
+
+    <!-- contact us start -->
+    <section id="contactUs" class="position-relative">
+        <!-- form start -->
+        <form action="" class="position-relative">
+            <div class="container p-5 text-center">
+                <h3 class="py-4 px-5 text-white-50">Contact Us</h3>
+                <div class="row justify-content-center px-5 ">
+                    <div class="col-md-6 input">
+                        <input id="nameInput" name="name" type="text" class="w-75 target" placeholder="Enter your name">
+                        <p id="nameError" class="text-danger"> </p>
+                    </div>
+                    <div class="col-md-6 input">
+                        <input id="emailInput" name="email" type="email" class="w-75 target" placeholder="Enter your mail">
+                        <p id="emailError" class="text-danger"> </p>
+                    </div>
+                    <div class="col-md-6 input">
+                        <input id="phoneInput" name="phone" type="text" class="w-75 target" placeholder="Enter your phone number">
+                        <p id="phoneError" class="text-danger">  </p>
+                    </div>
+                    <div class="col-md-6 input">
+                        <input id="ageInput" name="age" type="text" class="w-75 target" placeholder="Enter your age">
+                        <p id="ageError" class="text-danger"> </p>
+                    </div>
+                    <div class="col-md-6 input">
+                        <input id="passwordInput" name="password" type="password" class="w-75 target" placeholder="Enter your password">
+                        <p id="passwordError" class="text-danger"> </p>
+                        <div class="toggle text-start w-75 py-1 ms-5 ps-4">
+                            <label for="toggler" class="text-white-50">show password
+                                <input type="checkbox" name="toggle" id="toggler">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 input">
+                        <input id="rePasswordInput" name="password" type="password" class="w-75 target" placeholder="Re-enter your password">
+                        <p id="unmatchedError" class="text-danger"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-btn  mb-3  text-center">
+                <button id="submit">submit</button>
+            </div>
+        </form>
+        <!-- form end -->
+        <div id="finish">
+            <h3 class="py-3">Congratulations</h3>
+            <p>Redirecting ....</p>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script type="module" src="js/main.js" ></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+body{
+    background-color: black;
+    color: white;
+}
+ul{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+a:hover,li:hover{
+    color: #e83e8c;
+    padding-left: 10px;
+}
+nav{
+    display: flex;
+    width: 19rem;
+    position: fixed;
+    height:100vh;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    transform: translateX(-75%);
+    transition: 1s;
+    
+}
+
+.nav-links{
+    flex-grow: 1;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+ul li{
+    padding: 30px 0;
+    border-bottom:2px solid rgba(255, 255, 255, 0.1) ;
+    
+}
+
+.logo{
+    background-color:white ;
+    color: black;
+    padding: 20px 10px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+} 
+i{
+    cursor: pointer;
+}
+.search-bar{
+    text-align: center;
+    margin-top: 50px;
+}
+#searchInput{
+    width: 40%;
+    background-color: transparent;
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    caret-color:rgba(255, 255, 255, 0.5); ;
+    color: white;
+    font-size: 1.2rem;
+}
+#searchInput::placeholder{
+text-align: center;
+font-size: 1.5rem;
+}
+.box{
+    overflow: hidden;
+}
+.box-caption{
+    position: absolute;
+    inset:100%;
+    text-align: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    transition: 1s;
+}
+.box h3{
+    color: darkblue;
+}
+.box p{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.box:hover .box-caption{
+inset: 0;
+}
+
+form input{
+    
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    caret-color: white;
+    color: white;
+}
+form input::placeholder{
+    text-align: center;
+}
+input:focus{
+    border-bottom:1px solid #e83e8c !important;
+}
+button{
+    background-color:transparent;
+    color: white;
+    border: 1px solid #e83e8c;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+.input{
+    position: relative;
+    margin: 20px 0;
+}
+form div{
+    position: relative;
+}
+form p{
+    
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#finish{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    inset: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+#finish h3{
+    color: red;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+#finish p{
+    font-size: 1.3rem;
+}
