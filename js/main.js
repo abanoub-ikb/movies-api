@@ -11,9 +11,12 @@ let rePw = document.getElementById('rePasswordInput');
 $('.menu-icon').click(()=>{
    if(document.getElementById('navBar').style.transform==='translateX(-75%)'){
     $('nav').css('transform','translateX(0%)');
-    
+    $('#burgerIcon').removeClass('fa-solid fa-bars fa-lg');
+    $('#burgerIcon').addClass('fa-solid fa-xmark fa-lg');
    }else {
     $('nav').css('transform','translateX(-75%)');
+    $('#burgerIcon').removeClass('fa-solid fa-xmark fa-lg');
+    $('#burgerIcon').addClass('fa-solid fa-bars fa-lg');
    }
 });
 // --------------------------------------------------------------------------------------------------------------
